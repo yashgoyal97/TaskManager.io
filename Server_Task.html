@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <link href="./serverTask.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="header">Task Manger</h2>
+        <div class="boxes box1">
+            <button class="btn margin-right" type="submit" onclick="addServer()">Add Server</button>
+            <button class="btn remove-btn" type="submit" onclick="clearServerList()">Clear Servers</button>
+        </div>
+        <div class="boxes box1">
+            <input class="btn input-btn" type="number" id="task" min="0">
+            <button class="btn" type="submit" onclick="addTask()">Add Task</button>
+        </div>
+        <div class="boxes">
+            <h2>Servers Available</h2>
+            <hr>
+            <div id="serverList">
+                <h4>No server available</h4>
+            </div>
+            <div id="inProgressDiv" style="display: none;">
+                <br>
+                <h2>In Progress</h2>
+                <hr>
+                <div id="taskInProgressList"></div>
+            </div>
+            <br>
+            <h2>New Tasks</h2>
+            <hr>
+            <div id="taskList">
+                <h4>No task available</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="./test.js"></script>
+</body>
+
+</html>

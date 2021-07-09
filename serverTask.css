@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+.margin-right {
+    margin-right: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.boxes {
+    margin: 20px 0;
+}
+.box1 {
+    display: flex;
+}
+.btn {
+    display: inline-block;
+    background: #9B59B6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+}
+.remove-btn {
+    background: #f4f4f4;
+    color: #9B59B6;
+    border: 2px solid #9B59B6;
+}
+.input-btn {
+    background: #fff;
+    border: 2px solid #9B59B6;
+    color: black;
+    font-weight: 700;
+    margin-right: 10px;
+    cursor: auto;
+}
+.task-each {
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.myProgress {
+    width: 100%;
+    background-color: rgb(248, 246, 246);
+    border:1px solid #9B59B6;
+}
+.task-heading {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    padding: 10px 0;
+    margin: 5px;
+    border-radius: 5px;
+}
+.myBar {
+    width: 0%;
+    height: 30px;
+    background-color: #9B59B6;
+}
+
+.servers {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(195, 155, 199, 0.288);
+    padding: 5px;
+    margin: 5px 0px;
+    border-radius: 2px;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(195, 155, 199, 0.288);
+    padding: 5px;
+    margin: 5px 0px;
+    border-radius: 2px;
+}
+
+.tasksInProgress {
+    display: flex;
+    background-color: rgba(195, 155, 199, 0.288);
+    padding: 5px;
+    margin: 5px 0px;
+    border-radius: 2px;
+}
+
+.progBG {
+    border:1px solid #9B59B6;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 1px;
+}
+
+.progBar {
+    border-radius: 4px;
+    width: 0%;
+    height: 100%;
+    background-color: #9B59B6;
+}
+
+
+.taskName {
+    width: 30%;
+}
