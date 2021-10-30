@@ -173,11 +173,11 @@ function tasksInProgressDiv(inProgTasks) {
 
             //progress bar running
             if (task.taskStatus !== "PROG_START") {
-                var progBars = document.getElementsByClassName('progBar');
-                for (var i = 0; i < progBars.length; i++) {
-                    var width = 0;
-                    var elem = progBars[i];
-                    var newInterval = setInterval(function () {
+                const progBars = document.getElementsByClassName('progBar');
+                for (let i = 0; i < progBars.length; i++) {
+                    let width = 0;
+                    let elem = progBars[i];
+                    let newInterval = setInterval(function () {
                         if (width < 100) {
                             task.taskStatus = "PROG_START";
                             width++;
